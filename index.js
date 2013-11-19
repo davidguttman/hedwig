@@ -5,10 +5,12 @@ var through = require('through')
 var open = require('open')
 var ujs = require('uglify-js')
 
-var ws = request.post('http://hedwig.in/create', function(err, res, body) {
+var baseUrl = 'http://hedwig.in/'
+
+var ws = request.post(baseUrl + 'create', function(err, res, body) {
   if (err) return console.error(err)
 
-  var url = 'http://hedwig.in/' + body
+  var url = baseUrl + body
   console.log('Deployed to', url)
   open(url)
 })
