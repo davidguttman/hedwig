@@ -1,0 +1,28 @@
+{
+  "name": "hedwig",
+  "version": "0.0.0",
+  "description": "Easily publish client-side browserify apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidguttman/hedwig.git"
+  },
+  "keywords": [
+    "browserify",
+    "publish",
+    "browser"
+  ],
+  "author": "David Guttman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidguttman/hedwig/issues"
+  },
+  "bin": "bin/hedwig",
+  "dependencies": {
+    "hyperquest": "~0.1.8",
+    "request": "~2.27.0"
+  }
+}
