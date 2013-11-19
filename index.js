@@ -3,6 +3,7 @@
 var request = require('request')
 var through = require('through')
 var open = require('open')
+var zlib = require('zlib')
 var ujs = require('uglify-js')
 
 var baseUrl = 'http://hedwig.in/'
@@ -29,4 +30,4 @@ var ugs = through(function onData (data) {
   this.queue(null)
 })
 
-process.stdin.pipe(ugs).pipe(ws)
+process.stdin.pipe(ugs).pipe(zlib.createGzip()).pipe(ws)
