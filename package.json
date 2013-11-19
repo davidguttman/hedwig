@@ -23,6 +23,8 @@
   "bin": "bin/hedwig",
   "dependencies": {
     "request": "~2.27.0",
-    "open": "0.0.4"
+    "open": "0.0.4",
+    "uglify-js": "~2.4.3",
+    "through": "~2.3.4"
   }
 }
